@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+  border: 1px solid black;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid black;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.sidebar {
+  display: grid;
+  border: 1px solid black;
+  grid-row: 1 / 4;
+  align-content: start;
+}
+
+.sidebar-item {
+  border: 1px solid black;
+  place-self: center stretch;
+  gap: 24px;
+}
