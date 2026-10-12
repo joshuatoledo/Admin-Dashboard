@@ -27,8 +27,12 @@
   align-content: start;
 }
 
-.sidebar-item {
-  border: 1px solid black;
-  place-self: center stretch;
-  gap: 24px;
+.sidebar-main-links {
+  display: grid;
+  margin-top: 20px;
+}
+
+.sidebar-settings-links {
+  display: grid;
+  margin-top: 20px;
 }
