@@ -10,6 +10,7 @@
   grid-template-columns: 1fr 4fr;
   gap: 4px;
   border: 1px solid black;
+  min-height: 100vh;
 }
 
 .header {
@@ -40,7 +41,6 @@
 
 .article {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 1fr;
 }
 
@@ -50,4 +50,28 @@
   grid-template-columns: 1fr 1fr;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  gap: 20px;
+}
+
+.sidebar-content {
+  display: grid;
+  gap: 10px;
+}
+
+.announcements-content {
+  border: 1px solid black;
+  justify-self: flex-start;
+}
+
+.trending-content {
+  border: 1px solid black;
+  justify-self: flex-start;
+}
+
+.announcements-content,
+.trending-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
 }
