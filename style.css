@@ -15,11 +15,13 @@
 
 .header {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-columns: 2fr 1fr;
   border: 1px solid black;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+  padding: 16px;
+  gap: 16px;
 }
 
 .sidebar {
@@ -60,12 +62,12 @@
 
 .announcements-content {
   border: 1px solid black;
-  justify-self: flex-start;
+  justify-self: start;
 }
 
 .trending-content {
   border: 1px solid black;
-  justify-self: flex-start;
+  justify-self: start;
 }
 
 .announcements-content,
@@ -74,4 +76,61 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#search {
+  width: 400px;
+}
+
+.lower-header {
+  display: flex;
+  align-items: center;
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.menu-nav {
+  display: flex;
+  gap: 16px;
+  justify-self: stretch;
+}
+
+.buttons {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
 }
